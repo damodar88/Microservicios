@@ -12,13 +12,14 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @Table( name ="productos" )
-//@Getter
-//@Setter
 public class Producto implements Serializable {
 	
 	private static final long serialVersionUID = -7474942055705357411L;
@@ -60,6 +61,4 @@ public class Producto implements Serializable {
 		return serialVersionUID;
 	}
 
-	
-	
 }
