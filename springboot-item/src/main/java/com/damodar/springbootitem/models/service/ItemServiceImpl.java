@@ -14,7 +14,7 @@ import com.damodar.springbootitem.models.Item;
 import com.damodar.springbootitem.models.Producto;
 import com.sun.tools.javac.code.Attribute.Array;
 
-@Service
+@Service( "serviceRestTemplate" )
 public class ItemServiceImpl implements ItemService {
 
 	@Autowired
@@ -32,7 +32,7 @@ public class ItemServiceImpl implements ItemService {
 		Map< String, String > pathVariables = new HashMap< String, String >();
 		pathVariables.put( "id", id.toString());
 		Producto producto = clienteRest.getForObject( "http://localhost:8001/ver/{id}", Producto.class, pathVariables );
-		return null;
+		return new Item( producto, cantidad );
 	}
 
 }
