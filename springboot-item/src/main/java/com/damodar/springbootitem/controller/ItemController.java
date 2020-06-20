@@ -15,8 +15,8 @@ import com.damodar.springbootitem.models.service.ItemService;
 public class ItemController {
 	
 	@Autowired
-	@Qualifier( "serviceFeign" )
-	//@Qualifier( "serviceRestTemplate" )
+	//@Qualifier( "serviceFeign" )
+	@Qualifier( "serviceRestTemplate" )
 	private ItemService itemService;
 	
 	

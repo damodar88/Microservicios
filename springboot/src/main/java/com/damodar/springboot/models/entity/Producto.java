@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.persistence.Transient;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -33,6 +34,15 @@ public class Producto implements Serializable {
 	@Temporal( TemporalType.DATE )
 	private Date createAt;
 	
+	@Transient
+	private Integer port;
+	
+	public Integer getPort() {
+		return port;
+	}
+	public void setPort(Integer port) {
+		this.port = port;
+	}
 	public Long getId() {
 		return id;
 	}
