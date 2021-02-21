@@ -1,6 +1,6 @@
 /.metadata/
-.gitignore.swp
-.gradle
+/.gitignore.swp
+/.gradle
 /springboot/target/
 /springboot/.classpath
 /springboot/.project
