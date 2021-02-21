@@ -1,0 +1,12 @@
+/.metadata/
+.gitignore.swp
+.gradle
+/springboot/target/
+/springboot/.classpath
+/springboot/.project
+/springboot/.settings
+/springboot/.mvn
+/springboot-item/.classpath
+springboot-item/.settings
+springboot-item/.project
+springboot-item/.mvn
